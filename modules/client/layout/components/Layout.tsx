@@ -8,7 +8,7 @@ import ModalComponent from '../../../common/ModalComponent';
 import { IUser } from '../../../types';
 import { useRouter } from 'next/router';
 import { Animation1, Animation2, Animation3, Animation4 } from '../../../common/ScreenAnimation';
-import { step1, step2, step3, step4, step5, t, spay, loves, hippo, marchaakhai, memoWords, tomyo, model as modelImg } from '../../../client/constants';
+import { step1, step2, step3, step4, step5, t, spay, loves, hippo, marchaakhai, lovesHeader, memoWords, tomyo, model as modelImg } from '../../../client/constants';
 
 type Props = {
   children: any;
@@ -104,7 +104,7 @@ function Layout({ children }: Props) {
             <img src={t} alt="loves coffee" className={` tugrug animate__animated `} />
             <img src={spay} alt="loves coffee" className={` spay animate__animated `} />
           </div>
-          <img src={loves} alt="loves coffee" className={` loves animate__animated`} />
+          <img src={lovesHeader} alt="loves coffee" className={` loves animate__animated`} />
         </Logo>
       );
     }
@@ -114,7 +114,7 @@ function Layout({ children }: Props) {
           <img src={t} alt="loves coffee" className={` tugrug animate__animated ${logoAnimation && 'animate__flip'}`} />
           <img src={spay} alt="loves coffee" className={` spay animate__animated ${logoAnimation && 'animate__flipInY'}`} />
         </div>
-        <img src={loves} alt="loves coffee" className={` loves animate__animated ${logoAnimation && 'animate__flipInY'}`} />
+        <img src={lovesHeader} alt="loves coffee" className={` loves animate__animated ${logoAnimation && 'animate__flipInY'}`} />
       </Logo>
     );
   };
@@ -123,9 +123,9 @@ function Layout({ children }: Props) {
     return (
       <WelcomePage className={`animate__animated ${welcomePageAnimation || 'animate__fadeOut'}`}>
         {renderLogo('stay')}
-        {model && (
+        {/* {model && (
           <img src={modelImg} alt="loves " className={` amc animate__animated ${model ? 'animate__bounceInUp' : modelOut && 'animate__flipOutY'}`} />
-        )}
+        )} */}
       </WelcomePage>
     );
   }
@@ -136,13 +136,13 @@ function Layout({ children }: Props) {
         {welcomePage && (
           <WelcomePage className={`animate__animated ${welcomePageAnimation || 'animate__fadeOut'}`}>
             {renderLogo('stay')}
-            {model && (
+            {/* {model && (
               <img
                 src={modelImg}
                 alt="loves "
                 className={` amc animate__animated ${model ? 'animate__bounceInUp' : modelOut && 'animate__flipOutY'}`}
               />
-            )}
+            )} */}
           </WelcomePage>
         )}
         <div>

@@ -12,6 +12,8 @@ const model = '/amc.png';
 const t = '/t.png';
 const spay = '/socialpay.png';
 
+const lovesHeader = '/lovesHeader.png';
+
 const loves = '/loves-one.png';
 const hippo = '/hippo.png';
 const marchaakhai = '/marchaakhai.png';
@@ -37,6 +39,7 @@ export {
   step4,
   step5,
   model,
+  lovesHeader,
   t,
   spay,
   loves,
