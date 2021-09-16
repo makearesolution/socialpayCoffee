@@ -1,0 +1,43 @@
+export const types = `
+  type User {
+    _id: String!
+    firstName: String
+    lastName: String
+    email: String
+    password: String
+    isOwner: Boolean
+    phone: String
+    type: String
+    companyName: String
+    companyRegistrationNumber: String
+    erxesCustomerId: String
+    customerId: String
+  }
+`;
+
+export const queries = `
+  userDetail(_id: String!): User
+  checkCustomer(token: String!): User
+  currentUser: User
+`;
+
+const userParams = `
+  password: String!,
+  email: String,
+  firstName: String,
+  lastName: String,
+  phone: String,
+  type: String,
+  companyName: String,
+  companyRegistrationNumber: Int,
+`;
+
+export const mutations = `
+  login(email: String!, password: String!, type: String, description: String): String
+  logout: String
+  forgotPassword(email: String!): String!
+  resetPassword(token: String!, newPassword: String!): JSON
+  userAdd(${userParams}): String
+  userEdit(_id: String!, ${userParams}): User
+  userChangePassword(currentPassword: String!, newPassword: String!): User
+`;

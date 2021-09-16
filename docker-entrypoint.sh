@@ -1,0 +1,15 @@
+#!/bin/sh
+
+ENV="$(cat <<EOF
+  window.env = {
+      REACT_APP_MAIN_API_DOMAIN: "$REACT_APP_MAIN_API_DOMAIN",
+      REACT_APP_NEXT_PUBLIC_MAIN_API_DOMAIN: "$REACT_APP_NEXT_PUBLIC_MAIN_API_DOMAIN",
+      REACT_APP_CLIENT_PORTAL_CONFIG_ID: "$REACT_APP_CLIENT_PORTAL_CONFIG_ID",
+      REACT_APP_HAS_COMPANY: "$REACT_APP_HAS_COMPANY",
+  }
+EOF
+)"
+
+echo $ENV > /client-portal-enterprise/static/js/env.js
+
+exec "$@"
