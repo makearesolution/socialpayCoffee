@@ -32,6 +32,8 @@ const winLottery = (branchName, promotionName) => {
   return 'Та <strong>' + branchName + '</strong> салбараас <strong>' + promotionName + ' </strong> хөнгөлөлттэй худалдан авах эрх хожлоо.';
 };
 
+// Test Commit nemev
+
 export {
   step1,
   step2,
