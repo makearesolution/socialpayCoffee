@@ -104,7 +104,7 @@ function Layout({ children }: Props) {
             <img src={t} alt="loves coffee" className={` tugrug animate__animated `} />
             <img src={spay} alt="loves coffee" className={` spay animate__animated `} />
           </div>
-          <img src={lovesHeader} alt="loves coffee" className={` loves animate__animated`} />
+          {/* <img src={lovesHeader} alt="loves coffee" className={` loves animate__animated`} /> */}
         </Logo>
       );
     }
@@ -114,7 +114,7 @@ function Layout({ children }: Props) {
           <img src={t} alt="loves coffee" className={` tugrug animate__animated ${logoAnimation && 'animate__flip'}`} />
           <img src={spay} alt="loves coffee" className={` spay animate__animated ${logoAnimation && 'animate__flipInY'}`} />
         </div>
-        <img src={lovesHeader} alt="loves coffee" className={` loves animate__animated ${logoAnimation && 'animate__flipInY'}`} />
+        {/* <img src={lovesHeader} alt="loves coffee" className={` loves animate__animated ${logoAnimation && 'animate__flipInY'}`} /> */}
       </Logo>
     );
   };
