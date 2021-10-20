@@ -96,6 +96,8 @@ function Layout({ children }: Props) {
     }
   });
 
+  // test commit
+  
   const renderLogo = (value) => {
     if (value === 'stay') {
       return (
